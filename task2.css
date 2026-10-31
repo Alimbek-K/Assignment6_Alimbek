@@ -1,0 +1,69 @@
+
+/* TASK 2 - PARTY IN MOTION */
+
+.guest-card {
+    cursor: pointer;
+}
+
+.guest-card:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+
+.guest-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(15, 23, 42, 0.55);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.guest-modal {
+    width: 100%;
+    max-width: 440px;
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+.guest-modal h2 {
+    margin-top: 0;
+}
+
+.guest-modal p {
+    line-height: 1.6;
+}
+
+#moveButtons {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#moveButtons button {
+    width: 100%;
+}
+
+.sort-button {
+    margin-bottom: 15px;
+    background: #0f766e;
+}
+
+.sort-button:hover {
+    background: #115e59;
+}
+
+.guest-card.selected {
+    border-color: #2563eb;
+    background: #dbeafe;
+}
+
+@media (max-width: 600px) {
+    .guest-modal {
+        padding: 18px;
+    }
+}

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Selector Detective - Assignment 6</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        defer>
+    </script>
+
+    <script src="js/task1.js" defer></script>
+</head>
+
+<body>
+
+    <header class="page-header">
+        <h1>Selector Detective</h1>
+        <p>AITU Birthday Party - Find the Cake Thief!</p>
+    </header>
+
+    <main class="container">
+
+        <section class="party-section">
+            <h2>The Party: 19:30 - 22:30</h2>
+
+            <div id="partyHouse" class="party-house">
+                <!-- Rooms and guests will be created by jQuery -->
+            </div>
+        </section>
+
+        <section class="cases-section">
+            <h2>Detective Cases</h2>
+
+            <div id="caseButtons" class="case-buttons">
+                <!-- Case buttons will be created by jQuery -->
+            </div>
+
+            <button id="clearBtn" type="button">
+                Clear Selection
+            </button>
+
+            <div id="caseResult" class="case-result"
+                 role="status" aria-live="polite">
+                Select a case to start the investigation.
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="page-footer">
+        <p>Assignment 6 - jQuery | Kengessov Alimbek | IT-2506</p>
+    </footer>
+
+</body>
+</html>

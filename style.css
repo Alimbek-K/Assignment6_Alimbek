@@ -1,0 +1,201 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.page-header {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.page-header h1 {
+    margin: 0 0 10px;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.party-section,
+.cases-section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+.party-section h2,
+.cases-section h2 {
+    text-align: center;
+}
+
+.party-house {
+    border: 6px solid #92400e;
+    background: #fef3c7;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.floor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.room {
+    background: #fffaf0;
+    border: 3px solid #b45309;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 0;
+}
+
+.room h3 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.guest-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.guest-card {
+    width: 105px;
+    min-height: 160px;
+    padding: 10px 5px;
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.avatar-ring {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 8px;
+    border: 4px solid #94a3b8;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar-ring img {
+    width: 100%;
+    height: 100%;
+}
+
+.color-red .avatar-ring { border-color: #dc2626; }
+.color-blue .avatar-ring { border-color: #2563eb; }
+.color-green .avatar-ring { border-color: #16a34a; }
+.color-yellow .avatar-ring { border-color: #eab308; }
+.color-purple .avatar-ring { border-color: #9333ea; }
+.color-black .avatar-ring { border-color: #171717; }
+.color-brown .avatar-ring { border-color: #92400e; }
+
+.guest-card strong,
+.guest-card small {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.guest-card small {
+    color: #64748b;
+}
+
+.things {
+    display: block;
+    min-height: 20px;
+}
+
+.aitu-badge {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 3px 6px;
+    border-radius: 5px;
+    background: #2563eb;
+    color: white;
+    font-size: 10px;
+}
+
+.guest-card.highlight {
+    background: #fef08a;
+    border-color: #eab308;
+}
+
+.room.highlight {
+    background: #fef08a;
+}
+
+.case-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#clearBtn {
+    margin-top: 20px;
+    background: #475569;
+}
+
+.case-result {
+    margin-top: 20px;
+    padding: 20px;
+    background: #eff6ff;
+    border-radius: 10px;
+}
+
+.page-footer {
+    padding: 20px;
+    background: #1e293b;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .floor {
+        grid-template-columns: 1fr;
+    }
+
+    .case-buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .case-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .party-section,
+    .cases-section {
+        padding: 12px;
+    }
+}
